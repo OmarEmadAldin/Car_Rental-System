@@ -1,0 +1,31 @@
+    void avail(vector <Cars>& c2) {
+     string cd, lp1 , ow ,rr;
+     ifstream car_data;
+     car_data.open("E:\\ASU\\C++\\VS Coding\\Cars'Data.csv");
+     for (int i =0 ; i>8 ; i++ ){
+            getline(car_data, cd, ',') ;
+            getline(car_data, lp1, ',') ;
+            getline(car_data, ow, ',') ;
+            getline(car_data, rr, ',') ;
+    
+        if(rr == " ") {
+                cout <<"the data of the that has no renter" <<endl ;
+                cout << cd <<lp1 << ow <<endl;
+                }
+     }
+    }
+    void not_avail(vector <Cars>& c2) {
+     string cd, lp1 , ow ,rr;
+     ifstream car_data;
+     car_data.open("E:\\ASU\\C++\\VS Coding\\Cars'Data.csv");
+     for (int i =0 ; i>8 ; i++ ){
+            getline(car_data, cd, ',') ;
+            getline(car_data, lp1, ',') ;
+            getline(car_data, ow, ',') ;
+            getline(car_data, rr, ',') ;
+          if(rr != " ") {
+                cout <<"the data of the that has renter" <<endl ;
+                cout << rr <<endl;
+                }
+     }
+}

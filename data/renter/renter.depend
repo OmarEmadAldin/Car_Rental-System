@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1641823322 source:c:\users\hamed\desktop\renter\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<fstream>
+	<iomanip>
+
+1641829917 source:c:\users\hamed\desktop\renter\untitled3.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<fstream>
+	<iomanip>
+
+1641831061 source:c:\users\hamed\desktop\renter\untitled2.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<fstream>
+	<iomanip>
+

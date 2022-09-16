@@ -1,0 +1,36 @@
+void module(string licenseP) {
+        string m ;
+        m.assign(licenseP) ; // to assign the data of one string in another one
+        string real_model ,real_license_plate, real_owner , real_renter , lolo , id , another_real_renter ;
+        ifstream car_data; // to get the data from the CSV file
+     car_data.open("E:\\ASU\\C++\\VS Coding\\Cars'Data.csv");
+        for (int i =0 ; i<8 ; i++){
+                vector<Cars> cc [i];
+            getline(car_data, real_model, ',') ;
+            getline(car_data, real_license_plate, ',') ;
+            getline(car_data, real_owner, ',') ;
+            getline(car_data, real_renter, ',') ;
+            if (real_license_plate == m){
+            cout << "the owner" << real_owner ;
+            if (real_renter == " "){
+            cout << "there's no renter " << "\n" <<"enter the name of the renter "<<endl;
+            getline(cin , lolo);
+                for (int j =0 ; j < 8 ; j++) {
+                    vector <Cars> ccc[j] ; 
+                    getline(car_data, real_model, ',') ;
+                    getline(car_data, real_license_plate, ',') ;
+                    getline(car_data, real_owner, ',') ;
+                    getline(car_data, another_real_renter, ',') ;
+                    if (another_real_renter == lolo) cout <<"enter another name"<< endl ;
+                    else cout <<"the new renter of the car is" << lolo << endl ;
+                }
+            cout << "enter the id" <<endl ;
+            cin >> id;
+            }
+            if (real_renter!=" ") {
+                cout <<"the renter"<<real_renter ;
+                cout <<"you can't rent the car " << endl ;
+            }
+            }
+        }
+    }
