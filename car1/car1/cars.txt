@@ -1,0 +1,9 @@
+
+1001          toyota          corolla          53000
+1002          nissan          patrol          200000
+1003          toyota          Camry          80000
+1004          Chevrolet          malibu          65000
+1005          BMW          X6          300000
+1006          mercedes          E200          250000
+1007          AUDI          Q7          350000
+101          bmw          tahoe          120000
